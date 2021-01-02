@@ -67,7 +67,6 @@ BOARD_SUPPORTS_SOUND_TRIGGER := true
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
-TARGET_USE_QTI_BT_STACK := true
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := cepheus
@@ -83,7 +82,6 @@ TARGET_HAS_WIDE_COLOR_DISPLAY := true
 TARGET_USES_COLOR_METADATA := true
 TARGET_USES_DISPLAY_RENDER_INTENTS := true
 TARGET_USES_DRM_PP := true
-TARGET_USES_GRALLOC4 := true
 TARGET_USES_HWC2 := true
 
 # DRM
@@ -116,12 +114,12 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := proton
 TARGET_KERNEL_CONFIG := cepheus_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/cepheus
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8150
 
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0xa90000
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
-#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += service_locator.enable=1
 BOARD_KERNEL_CMDLINE += loop.max_part=16
 SELINUX_IGNORE_NEVERALLOWS := true
