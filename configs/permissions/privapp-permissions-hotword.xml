@@ -4,11 +4,11 @@
         <permission name="android.permission.MANAGE_VOICE_KEYPHRASES"/>
     </privapp-permissions>
 
-    <privapp-permissions package="com.android.hotwordenrollment.xgoogle">
+    <privapp-permissions package="com.android.hotwordenrollment.tgoogle">
         <permission name="android.permission.MANAGE_VOICE_KEYPHRASES"/>
     </privapp-permissions>
 
-    <privapp-permissions package="com.android.hotwordenrollment.tgoogle">
+    <privapp-permissions package="com.android.hotwordenrollment.xgoogle">
         <permission name="android.permission.MANAGE_VOICE_KEYPHRASES"/>
     </privapp-permissions>
 </permissions>
